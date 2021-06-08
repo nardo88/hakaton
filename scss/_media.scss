@@ -1,0 +1,188 @@
+//=============================================================== 1200 =============================================
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 60px;
+    }
+
+    .about {
+        &__wrapper {
+            padding: 131px 0px 116px 0px;
+        }
+    }
+}
+
+//=============================================================== 992 =============================================
+@media (max-width: 992px) {
+    .about {
+        &__top {
+            justify-content: space-between;
+        }
+
+        &__content {
+            margin-left: 80px;
+
+            &--bottom {
+                margin-right: 80px;
+                margin-left: 0;
+            }
+        }
+
+        &__text {
+            &--bottom {
+                font-size: 20px;
+                line-height: 29px;
+            }
+        }
+    }
+}
+
+//=============================================================== 860 =============================================
+@media (max-width: 860px) {
+    .about {
+        &__title {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+
+            &--bottom {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__content {
+            margin-left: 40px;
+
+            &--bottom {
+                margin-left: 0;
+                margin-right: 40px;
+
+            }
+        }
+
+        &__bottom {
+            margin-top: 90px;
+        }
+    }
+}
+
+//=============================================================== 768 =============================================
+@media (max-width: 768px) {
+    .header {
+        min-height: 540px;
+
+        &__title {
+            max-width: 570px;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__logo {
+            height: 14px;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 145px;
+            margin-bottom: 30px;
+        }
+
+        &__adress {
+            margin-top: 28px;
+
+        }
+
+        &__description {
+            margin-top: 124px;
+        }
+    }
+
+    .about {
+        &__image {
+            display: none;
+        }
+
+        &__title {
+            margin-top: 0;
+            text-align: center;
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        &__content {
+            margin: 0;
+            &--bottom{
+                padding: 0;
+            }
+        }
+
+        &__wrapper {
+            padding: 50px 0px;
+        }
+
+        &__description {
+            max-width: 100%;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__bottom{
+            margin-top: 20px;
+        }
+    }
+}
+
+//=============================================================== 720 =============================================
+@media (max-width: 720px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+//=============================================================== 576 =============================================
+@media (max-width: 576px) {}
+
+//=============================================================== 480 =============================================
+@media (max-width: 480px) {}
+
+//=============================================================== 320 =============================================
+@media (max-width: 400px) {
+
+    .header {
+
+        &__adress {
+            font-size: 12px;
+
+        }
+
+        &__description {
+            font-size: 16px;
+        }
+    }
+}
+
+//=============================================================== 320 =============================================
+@media (max-width: 320px) {}

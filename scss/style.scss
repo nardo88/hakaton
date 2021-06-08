@@ -1,0 +1,13 @@
+// подключаем шрифты
+@import './fonts';
+// общие настройки
+@import './settings';
+// blocks
+@import './blocks/header';
+@import './blocks/about';
+@import './blocks/tasks';
+
+
+
+// адаптив
+@import './media';

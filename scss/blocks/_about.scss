@@ -1,0 +1,124 @@
+.about {
+    position: relative;
+    
+    &:after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 94%;
+        left: 50%;
+        bottom: 0;
+        background-color: #ccc9c6;
+        transform: translateX(-50%);
+
+    }
+
+    // .about__wrapper
+
+    &__wrapper {
+        padding: 131px 0px 116px 150px;
+
+    }
+
+    // .about__top
+
+    &__top {
+        display: flex;
+    }
+
+    // .about__image
+
+    &__image {}
+
+    // .about__content
+
+    &__content {
+        margin-left: 128px;
+
+        &--bottom {
+            margin-right: 128px;
+            margin-left: 0;
+            padding-top: 20px;
+            
+        }
+    }
+
+    // .about__title
+
+    &__title {
+        margin-top: 53px;
+        margin-bottom: 54px;
+
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 40px;
+        /* identical to box height, or 80% */
+
+
+        /* Main / Primary */
+
+        color: #887569;
+    }
+
+    // .about__description
+
+    &__description {
+        width: 100%;
+        max-width: 544px;
+    }
+
+    // .about__text
+
+    &__text {
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #887569;
+        margin-bottom: 45px;
+
+        &:last-child {
+            margin-bottom: 0;
+            
+        }
+
+        &--bottom{
+            margin-bottom: 12px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
+    // .about__bottom
+
+    &__bottom {
+        display: flex;
+        margin-top: 127px;
+    }
+
+    // .about__caption
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .about__name
+
+    &__name {
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+
+
+        /* Main / Primary */
+
+        color: #887569;
+    }
+}

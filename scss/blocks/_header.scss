@@ -1,0 +1,68 @@
+.header {
+    background: #A89583;
+    min-height: 100vh;
+    color: #fff;
+
+    // .header__wrapper
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 14px;
+    }
+
+    // .header__logo
+
+    &__logo {}
+
+    // .header__subtitle
+
+    &__subtitle {
+        margin-top: 260px;
+        margin-bottom: 42px;
+
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+
+
+    }
+
+    // .header__title
+
+    &__title {}
+
+    // .header__adress
+
+    &__adress {
+        margin-top: 42px;
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+
+        text-align: center;
+    }
+
+    // .header__description
+
+    &__description {
+        margin-top: 226px;
+
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 16px;
+        /* identical to box height, or 80% */
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}

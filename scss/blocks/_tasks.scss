@@ -1,0 +1,92 @@
+.tasks {
+    padding-top: 117px;
+
+    // .tasks__wrapper
+
+    &__wrapper {}
+
+    // .tasks__top
+
+    &__top {}
+
+    // .tasks__title
+
+    &__title {
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 32px;
+        /* identical to box height, or 64% */
+
+        text-align: center;
+
+        /* Main / Primary */
+
+        color: #887569;
+    }
+
+    // .tasks__foundation
+
+    &__foundation {
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 32px;
+        text-align: center;
+        color: #887569;
+        margin-top: 40px;
+        margin-bottom: 33px;
+    }
+
+    // .tasks__subtitle
+
+    &__subtitle {
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #887569;
+        text-align: center;
+        margin-bottom: 86px;
+    }
+
+    // .tasks__bottom
+
+    &__bottom {}
+
+    // .tasks__content
+
+    &__content {
+        margin-top: 68px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .tasks__list
+
+    &__list {}
+
+    // .tasks__item
+
+    &__item {}
+
+    // .tasks__description
+
+    &__description {}
+
+    // .tasks__btn
+
+    &__btn {}
+}
+
+.description {
+
+    // .description__item
+
+    &__item {}
+}
