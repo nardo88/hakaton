@@ -7,10 +7,31 @@
 body {
     background: #fff;
     font-family: 'Cera Pro';
+    padding-bottom: 100px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .container {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
+}
+
+
+.line-before{
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 94%;
+        left: 50%;
+        bottom: 0;
+        background-color: #ccc9c6;
+        transform: translateX(-50%);
+
+    }
 }
