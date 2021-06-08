@@ -1,17 +1,7 @@
 .about {
     position: relative;
     
-    &:after{
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: 94%;
-        left: 50%;
-        bottom: 0;
-        background-color: #ccc9c6;
-        transform: translateX(-50%);
-
-    }
+ 
 
     // .about__wrapper
 

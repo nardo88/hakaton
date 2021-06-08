@@ -1,0 +1,162 @@
+.speakers {
+    padding-top: 110px;
+
+    // .speakers__wrapper
+
+    &__wrapper {}
+
+    // .speakers__top
+
+    &__top {}
+
+    // .speakers__title
+
+    &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        color: #887569;
+        margin-bottom: 51px;
+
+       
+    }
+
+    // .speakers__content
+
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    // .speakers__item
+
+    &__item {}
+
+    // .speakers__bottom
+
+    &__bottom {}
+}
+
+.speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // .speaker__img
+
+    &__img {
+        border-radius: 4px;
+        width: 208px;
+        height: 208px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .speaker__name
+
+    &__name {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #887569;
+        margin-top: 28px;
+    }
+}
+
+.arbiters {
+    margin-top: 87px;
+
+    // .arbiters__title
+
+    &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        color: #887569;
+        margin-bottom: 54px;
+
+        &--mobile {
+            display: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+            color: #887569;
+        }
+    }
+
+    // .arbiters__content
+
+    &__content {}
+}
+
+.arbiter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    // .arbiter__item
+
+    &__item {
+        width: 45%;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 62px;
+        margin-right: 50px;
+    }
+
+    // .arbiter__img
+
+    &__img {
+        width: 96px;
+        height: 96px;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-right: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .arbiter__info
+
+    &__info {
+        padding-top: 20px;
+    }
+
+    // .arbiter__name
+
+    &__name {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        color: #887569;
+    }
+
+    // .arbiter__profession
+
+    &__profession {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #887569;
+    }
+}
