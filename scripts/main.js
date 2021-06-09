@@ -48,15 +48,18 @@ document.addEventListener('DOMContentLoaded', () => {
         registrationTop.addEventListener('click', e => {
             const target = e.target;
 
-            registrationBtn.forEach((item, i) => {
-                item.classList.remove('registration__btn--active');
-                if (target === item){
-                    item.classList.add('registration__btn--active');
-                    addActive(i);
-
-                }
-
-            })
+            if(target.classList.contains('registration__btn')){
+                registrationBtn.forEach((item, i) => {
+                    item.classList.remove('registration__btn--active');
+                    if (target === item){
+                        item.classList.add('registration__btn--active');
+                        addActive(i);
+    
+                    }
+    
+                })
+            }
+            
             
         })
     }
@@ -65,6 +68,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const sendForm = () => {
+        const overlay = document.querySelector('.overlay');
+
+        overlay.addEventListener('click', e => {
+            const target = e.target;
+
+            if (target.classList.contains('overlay')){
+                closeModal();
+            }
+
+            if (target.classList.contains('popup__close')){
+                closeModal();
+
+            }
+        })
+        
+
+        const disableScroll = () => {
+            const scrollWidth = window.innerWidth - document.body.offsetWidth;
+            document.body.dataset.scrollY = window.scrollY;
+            document.body.style.cssText = `
+                overflow: hidden;
+                position: fixed;
+                height: 100vh;
+                top: -${window.scrollY}px;
+                left: 0;
+                width: 100%;
+                padding-right: ${scrollWidth}px;
+            `
+        }
+        
+        const enableScroll = () => {
+            document.body.style.cssText = '';
+            window.scroll({
+                top: document.body.dataset.scrollY
+            })
+        }
+
+        const openModal = () => {
+            disableScroll()
+            overlay.classList.add('overlay--open')
+        }
+
+        const closeModal = () => {
+            isOpen = false;
+            enableScroll();
+            overlay.classList.remove('overlay--open');
+        }
 
         const validte = form => {
             // получаем элементы формы
@@ -114,10 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 form.reset();
                 const result = response.json();
                 console.log('success!');
-                // openModal();
+                openModal();
             } else {
                 alert('ошибка');
-                // openModal();
             }
         }
 
@@ -130,7 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     sendUser(target, '../sendmailUser.php');
                 } else {
                     sendUser(target, '../sendmailComand.php');
-
                 }
             }
         })
@@ -138,4 +186,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     sendForm();
+
+    const scrollToForm = () => {
+        const tasksBtn = document.querySelector('.tasks__btn');
+
+        tasksBtn.addEventListener('click', e => {
+            e.preventDefault();
+
+            const h = document.getElementById('joining').offsetTop;
+            window.scrollTo({top: h, behavior: 'smooth'});
+
+        })
+    }
+
+    scrollToForm();
+
 })

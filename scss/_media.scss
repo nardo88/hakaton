@@ -458,13 +458,44 @@
     .container {
         padding: 0 30px;
     }
+
+    .overlay{
+        padding: 0 30px;
+
+    }
+    .popup{
+        &__title {
+            font-size: 34px;
+            margin-bottom: 27px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 19px;
+            text-align: center;
+        }
+    }
 }
 
 //=============================================================== 576 =============================================
 @media (max-width: 576px) {}
 
 //=============================================================== 480 =============================================
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .overlay{
+        padding: 0 15px;
+    }
+    .popup{
+        &__title {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
 
 //=============================================================== 320 =============================================
 @media (max-width: 415px) {

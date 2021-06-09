@@ -43,3 +43,89 @@ ul {
     border: 1px solid rgb(252, 119, 119) !important;
     box-shadow: 0 0 5px 5px rgb(252, 119, 119);
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+
+    &--open {
+        visibility: visible;
+
+        .popup{
+            transform: translateY(0px);
+
+        }
+    }
+
+}
+.popup {
+    background: #A89583;
+    color: #fff;
+    width: 100%;
+    max-width: 600px;
+    padding: 50px 50px 80px;
+    border-radius: 8px;
+    position: relative;
+    transition: .3s;
+    transform: translateY(-1000px);
+
+
+		// .popup__title
+
+		&__title {
+            font-size: 40px;
+            margin-bottom: 30px;
+            
+		}
+
+		// .popup__text
+
+		&__text {
+            font-size: 25px;
+		}
+
+        &__close{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: none;
+            cursor: pointer;
+            background: transparent;
+            
+            &:after{
+                content: '';
+                width: 25px;
+                height: 2px;
+                background: rgb(255, 255, 255);
+                transform-origin: top left;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 0px;
+                left: 2px;
+            }
+
+            &:before{
+                content: '';
+                width: 25px;
+                height: 2px;
+                background: rgb(255, 255, 255);
+                transform-origin: top right;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 0px;
+                right: 2px;
+            }
+
+        }
+}

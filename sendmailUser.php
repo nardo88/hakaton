@@ -13,14 +13,14 @@
     $mail->setLanguage('ru', 'phpmailer/language/');
     $mail->IsHTML(true);
     // от кого письмо
-    $mail->setFrom('nardo1988@gmail.com', 'joymodels');
+    $mail->setFrom('nardo1988@gmail.com', '12 STOREEZ');
     // кому отправлять
-    $mail->addAddress('nardo1988@mail.ru');
+    $mail->addAddress('k.shumskaya@12storeez.com');
     // тема письма
-    $mail->Subject = 'Регистрация учатсника';
+    $mail->Subject = 'Регистрация участника';
    
     //Тело письма
-    $body = '<h1>Регистрация учатсника</h1>';
+    $body = '<h1>Регистрация участника</h1>';
     // если поле есть то формируем разметку html 
     // c данныи и все это пушим в тело ответа
     if (trim(!empty($_POST['name']))){
