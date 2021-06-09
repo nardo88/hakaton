@@ -102,6 +102,14 @@
         }
     }
 
+
+    .list-item{
+        &__description{
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
 }
 
 //=============================================================== 860 =============================================
@@ -153,6 +161,39 @@
         }
     }
 
+
+    .list-item{
+        &__time {
+            display: flex;
+            flex-shrink: 0;
+            font-size: 20px;
+            line-height: 30px;
+            width: 141px;
+            padding-right: 30px;
+        }
+
+        &__element{
+            &:before{
+                left: -8.5px;
+            }
+        }
+
+        &__description{
+            br{
+                display: none;
+            }
+        }
+    }
+
+    .step{
+        &__item{
+            width: 31%;
+
+            &--small{
+                width: 23%;
+            }
+        }
+    }
 
 }
 
@@ -352,6 +393,64 @@
         }
     }
 
+    .list-item{
+        flex-direction: column;
+        &__element{
+            &:before {
+                display: none;
+            }
+
+            &:after{
+                display: none;
+            }
+        }
+
+        &__element{
+            padding: 0;
+            width: 100%;
+        }
+        &__time{
+            padding: 0;
+            width: 100%;
+            margin-bottom: 4px;
+        }
+    }
+
+    .plan{
+        padding-top: 65px;
+        padding-bottom: 40px;
+    }
+
+
+    .step{
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 416px;
+        margin: 0 auto 50px;
+        &__item{
+            width: 100%;
+            margin-bottom: 10px;
+
+            &:after{
+                display: none;
+            }
+
+            br{
+                display: none;
+            }
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .faq{
+        padding-top: 107px;
+        padding-bottom: 190px;
+    }
+
+
 }
 
 //=============================================================== 720 =============================================
@@ -383,6 +482,7 @@
     }
 
     .tasks {
+        padding: 50px 0;
         &__foundation {
             font-size: 26px;
         }
@@ -406,6 +506,52 @@
         &__profession {
             font-size: 12px;
             line-height: 16px;
+        }
+    }
+
+    .joining{
+        padding-top: 70px;
+        padding-bottom: 60px;
+
+        &__title {
+            font-size: 22px;
+            line-height: 24px;
+            margin-bottom: 35px;
+        }
+    }
+
+    .form{
+        &__input {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__btn {
+            padding: 5px 25px;
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+
+    .list-item__title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .plan{
+        &__title{
+            font-size: 22px;
+            line-height: 24px;
+        }
+        &__subtitle{
+            font-size: 18px;
+        }
+
+    }
+
+    .faq{
+        padding: 50px 0;
+        &__title{
+            font-size: 22px;
+            line-height: 24px;
         }
     }
 }

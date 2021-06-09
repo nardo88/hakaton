@@ -7,7 +7,6 @@
 body {
     background: #fff;
     font-family: 'Cera Pro';
-    padding-bottom: 100px;
 }
 
 ul {
@@ -30,8 +29,12 @@ ul {
         width: 94%;
         left: 50%;
         bottom: 0;
-        background-color: #ccc9c6;
+        background-color: #EBE6E1;
         transform: translateX(-50%);
 
     }
+}
+
+.mb0{
+    margin-bottom: 0;
 }
